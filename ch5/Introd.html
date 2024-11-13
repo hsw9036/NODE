@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인소개페이지</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background:rgb(221, 207, 240);
+            height : 100%;
+            margin: 0;
+        }
+        
+        #namecard li {
+            list-style-type: square;
+            color: purple;
+        }
+
+
+        li,p{
+            line-height: 2.0;
+            font-size : 0.9em;
+        }
+        #container{
+            width: 900px;
+            margin: 0 auto;
+            height: 100%;
+            background: #fff;
+        }
+        
+        aside{
+            background: rgb(216,216,216);
+            width: 300px;
+            float: left;
+            height: 100%;
+            padding: 20px 50px;
+        }
+
+        .pf{
+            width: 230px;
+            border-radius: 10%;
+            box-shadow: 3px 3px 10px 2px yellow;
+        }
+
+        .base{
+            width: 100px;
+            float: right;
+            margin: 5px;
+        }
+
+        #main{
+            width: 600px;
+            float: right;
+            height: 100%;
+            padding: 20px;
+            background: #fff;
+        }
+
+        #main > section {
+            width: 500px;
+            padding: 20px;
+            margin: 10px;
+            border-bottom: 3px dotted;
+        }
+
+        section >p, section > table {
+            margin-left: 50px;
+        }
+
+        /*글자 스타일*/
+        aside h1 {
+            font-size: 1.8em;
+        }
+
+        aside h2{
+            font-size: 1.2em;
+        }
+
+        #namecard p{
+            color:black;
+            font: size 1.0em;
+        }
+
+        #namecard h1{
+            font-size: 1.3em;
+            color: rgb(192, 181, 23);
+        }
+
+        #namecard :hover{
+            color: rgb(35, 141, 109);
+        }
+        #namecard {
+            transition: 3s;
+        }
+        .subtitle{
+            font-size: 1.5em;
+            line-height: 0.9em;
+        }
+
+        table{
+            border:1px solid #222;
+            border-collapse: collapse;
+            width: 70%;
+        }
+
+        thead{
+            background:#eee;
+        }
+
+        th,td{
+            border:1px solid #ccc;
+            padding: 5px;
+            font-size: 0.8em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <aside>
+            <div id="namecard">
+                <img src="./2222222.jpg" class="pf">
+                <h1>나를 소개합니다</h1>
+                <p>황성욱 소개 페이지 입니다.</p>
+                <ul>
+                    <li>누구십니까 ?</li>
+                    <li>취미는요 ?</li>
+                    <li>포부가 있다면 ?</li>
+                    <li>연락처</li>
+                </ul>
+            </div>
+
+        </aside>
+        <div id="main">
+            <!--자기 소개-->
+            <section>
+                <h2 class="subtitle"><mark>누구십니까 ?</mark></h2>
+                <p>구리시 수택동에 살고있는 28살 황성욱입니다.</p>
+            </section>
+
+            <!--경력/기술-->
+            <section>
+                <h2 class="subtitle"><mark>취미는요 ?</mark></h2> <img src="./base.jpg" class="base">
+                <ul>
+                    <li>야구보기</li>
+                        <ul>
+                            <li>16년째 엘지팬</li>
+                            <li>무직 엘지</li>
+                        </ul>
+                </ul>
+
+                <ul><li>폭식하기</li>
+                    <ul>
+                        <li>먹는거 좋아</li>
+                        <li>술 고기</li>
+                    </ul>
+                </ul>
+            </section>
+            <section>
+                <h2 class="subtitle"><mark>포부가 있다면 ?</mark></h2>
+                <p>열심히해서 취업하기 ^_^</p>
+            </section>
+            <!--학력-->
+            <section>
+                <h2 class="subtitle"><mark>연락처</mark></h2>
+                <table>
+                    <caption>어디든 열려있는 사람</caption>
+                    
+                        <tr>
+                            <th>전화번호</th>
+                            <td>010-2162-9036</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>카카오톡</th>
+                            <td>hh9030</td>
+                        </tr>
+                        <tr>
+                            <th>인스타그램</th>
+                            <td>wook_wow</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../ch2"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../node_modules"
+		}
+	]
+}
